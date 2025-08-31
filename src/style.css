@@ -1,0 +1,144 @@
+/* Variables para un tema formal y profesional */
+:root {
+  --color-primary: #003366; /* Azul oscuro corporativo */
+  --color-secondary: #e9ecef; /* Gris claro para fondos */
+  --color-text: #212529; /* Texto casi negro */
+  --color-border: #adb5bd; /* Gris para bordes */
+  --color-light-bg: #ffffff; /* Fondo blanco */
+  --color-accent: #007bff; /* Azul de acento para botones/enfoque */
+  --font-family-sans: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Estilos globales */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--font-family-sans);
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 700px;
+  width: 100%;
+  padding: 3rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background-color: var(--color-light-bg);
+  border-radius: 12px;
+}
+
+/* Encabezado */
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  color: var(--color-primary);
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.app-header p {
+  color: #6c757d;
+  font-size: 1.1em;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  padding: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Grupos de formulario */
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1.1em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+#determinarAsiento {
+  /* Estilo base del botón */
+  background: linear-gradient(135deg, #0056b3, #003d82); /* Degradado de azul */
+  color: #ffffff; /* Texto blanco para contraste */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  
+  /* Sombra para que resalte */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  
+  /* Transiciones suaves para efectos al pasar el mouse */
+  transition: all 0.3s ease-in-out;
+}
+
+#determinarAsiento:hover {
+  /* Efecto al pasar el mouse */
+  transform: translateY(-2px); /* Ligeramente hacia arriba */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Sombra más grande */
+  background: linear-gradient(135deg, #004085, #002c66); /* Cambio de color más oscuro */
+}
+
+#determinarAsiento:active {
+  /* Efecto al hacer clic */
+  transform: translateY(0); /* Vuelve a su posición original */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra más pequeña */
+}
+
+
+.result-section h2 {
+  font-size: 1.8em;
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+}
+
+#resultadoAnalisis {
+  min-height: 80px;
+  font-size: 1.2em;
+  color: var(--color-text);
+  font-weight: 500;
+  white-space: pre-wrap;
+  background-color: var(--color-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px dashed var(--color-border);
+  marker-end: 2em;
+}
+.result-box {
+  /* Aquí van los estilos que quieres aplicar a este div */
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+
