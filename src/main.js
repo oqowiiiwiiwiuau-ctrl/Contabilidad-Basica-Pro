@@ -34,7 +34,6 @@ import './style.css'
 //   mostrar.textContent = "valor de la compra = "+campo_texto;
 // });
 //Atravalor los valores de botones y espacios de texto
-let tipoTransaccion = document.getElementById("tipoTransaccion");
 let number = document.getElementById("monto");
 let determinarAsiento = document.getElementById("determinarAsiento");
 //Atrapar todos los elementos de resultados
