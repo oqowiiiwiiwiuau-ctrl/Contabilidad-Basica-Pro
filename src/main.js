@@ -34,6 +34,7 @@ import './style.css'
 //   mostrar.textContent = "valor de la compra = "+campo_texto;
 // });
 //Atravalor los valores de botones y espacios de texto
+let tipoTransaccion = document.getElementById("tipoTransaccion");
 let number = document.getElementById("monto");
 let determinarAsiento = document.getElementById("determinarAsiento");
 //Atrapar todos los elementos de resultados
@@ -43,8 +44,10 @@ let two = document.getElementById("two");
 let two_debe = document.getElementById("two-debe");
 let three = document.getElementById("three");
 let three_haber = document.getElementById("three-haber")
+let glosa = document.getElementById("resultadoAsiento")
 //Atrapar la función en un listener
 determinarAsiento.addEventListener("click", function(){
+  let tipo = tipoTransaccion.value;
   let operacion = number.value;
   one.textContent = `Venta`;
   one_debe.textContent = `${operacion*0.87}`;
@@ -52,5 +55,6 @@ determinarAsiento.addEventListener("click", function(){
   two_debe.textContent = `${operacion*0.13}`;
   three.textContent = `Caja Moneda Nacional`;
   three_haber.textContent = `${operacion}`; 
-
+  glosa.textContent = `Glosa: por la compra de ${tipo}, 
+  por el valor de ${operacion}.`;
 });
